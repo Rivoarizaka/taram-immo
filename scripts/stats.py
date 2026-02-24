@@ -1,6 +1,8 @@
+import os
+from dotenv import load_dotenv
 import psycopg2
 
-DB_URI = "postgresql://postgres.kosmxcewoadigopnhxko:M2DTvY6FnULuY!a@aws-1-eu-west-2.pooler.supabase.com:6543/postgres"
+DB_URI = os.getenv("SUPABASE_DB_URL")
 
 def fetch_city_statistics():
     try:
