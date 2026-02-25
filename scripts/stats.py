@@ -2,7 +2,12 @@ import os
 from dotenv import load_dotenv
 import psycopg2
 
+load_dotenv()
+
 DB_URI = os.getenv("SUPABASE_DB_URL")
+
+if not DB_URI:
+    exit()
 
 def fetch_city_statistics():
     try:
