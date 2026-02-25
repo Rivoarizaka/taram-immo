@@ -23,16 +23,20 @@ Le projet est organisé de manière modulaire pour séparer les responsabilités
 
 ## Installation et Lancement
 ### Frontend (Next.js)
+```text
 cd frontend
 npm install
+```
 * **Créez un fichier .env.local avec :**
 * **NEXT_PUBLIC_SUPABASE_URL=votre_url**
 * **NEXT_PUBLIC_SUPABASE_ANON_KEY=votre_cle_anon**
 npm run dev
 
 ### Statistiques (Python)
+```text
 cd scripts
 pip install python-dotenv psycopg2-binary
+```
 * **Créez un fichier .env avec :**
 * **SUPABASE_DB_URL=votre_uri_postgresql**
 python stats.py
